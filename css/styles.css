@@ -218,7 +218,8 @@ body {
   margin-left: auto;
 }
 /* кнопка секції героя */
-.hero-btn {
+.hero-btn,
+.pb-submit-btn {
   color: var(--hero-text-color);
   background-color: var(--order-btn-color);
   border-color: transparent;
@@ -436,6 +437,12 @@ body {
 .page-bottom {
   padding: 60px 0;
 }
+.page-bottom .container {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
 /* лого в футері , та адресса*/
 .logo-light,
 .direction {
@@ -472,12 +479,8 @@ body {
   margin-top: 9px;
 }
 /* группа посилань на соцмережі */
-.page-bottom .container {
-  display: flex;
-  align-items: baseline;
-  gap: 70px;
-}
-.s-links-title {
+.s-links-title,
+.pb-form-label {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -485,7 +488,7 @@ body {
   color: var(--light-text-color);
 }
 
-.bottom-s-links {
+.bottom-s-links{
   display: flex;
   margin-top: 20px;
   gap: 10px;
@@ -511,6 +514,46 @@ body {
 .bottom-s-link:hover,
 .bottom-s-link:focus {
   background-color: var(--accent-color);
+}
+
+/* форма підписки на розсилку */
+.page-bottom-form{
+  margin-left: 23px;
+}
+
+.pb-form-email{
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  align-items: baseline;
+  
+}
+
+.pb-email-input{
+  height: 50px;
+  min-width: 358px;
+  padding-left: 16px;
+  
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: rgba(33, 150, 243, 0);
+}
+
+.pb-submit-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  min-width: 200px;
+  padding: 10px 28px;
+  margin-top: 0;
+  margin-left: 12px;
+}
+.pb-submit-icon{
+  margin-left: 10px;
 }
 /* модалка */
 .backdrop {
