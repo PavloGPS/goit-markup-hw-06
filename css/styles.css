@@ -544,7 +544,6 @@ body {
   background-color: rgba(33, 150, 243, 0);
 }
 
-
 .pb-submit-btn {
   display: flex;
   justify-content: center;
@@ -666,7 +665,7 @@ body {
   display: block;
   text-align: left;
   width: 100%;
-  
+
   /* outline: solid 2px red; */
 }
 .form-input {
@@ -758,17 +757,15 @@ body {
   width: 16px;
   height: 15px;
 
-  
   background: transparent;
 
   border: 2px solid var(--secondary-text-color);
   border-radius: 2px;
   fill: transparent;
 
-
   transition: border-color 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
-    cursor: pointer;
+  cursor: pointer;
 }
 .checkbox:checked + .checkbox-icon {
   background-color: var(--accent-color);
