@@ -445,7 +445,7 @@ body {
 .page-bottom .container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+  gap: 92px;
 }
 
 /* лого в футері , та адресса*/
@@ -522,9 +522,6 @@ body {
 }
 
 /* форма підписки на розсилку */
-.page-bottom-form {
-  margin-left: 23px;
-}
 
 .pb-form-email {
   margin-top: 20px;
@@ -542,8 +539,11 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
+  color: var(--light-text-color);
+
   background-color: rgba(33, 150, 243, 0);
 }
+
 
 .pb-submit-btn {
   display: flex;
@@ -629,8 +629,8 @@ body {
 
   transition: fill 250ms var(--timing-function);
 }
-.close-btn:hover {
-  /* color: var(--accent-color); */
+.close-btn:hover,
+.close-btn:focus {
   fill: var(--accent-color);
 }
 /* Назва модального вікна */
@@ -666,8 +666,7 @@ body {
   display: block;
   text-align: left;
   width: 100%;
-  padding-top: 18px;
-
+  
   /* outline: solid 2px red; */
 }
 .form-input {
@@ -685,9 +684,11 @@ body {
 }
 
 .form-label {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
+
+  margin-bottom: 4px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -702,7 +703,7 @@ body {
   top: 50%;
   left: 12px;
   z-index: 10;
-  fill: currentColor;
+  fill: #212121;
   background-color: #fff;
 
   transition: fill 250ms var(--timing-function);
